@@ -24,6 +24,8 @@
     "@types/node": "20.5.8",
     "@types/react": "^18.2.21",
     "@types/react-dom": "18.2.7",
+    "@tanstack/eslint-plugin-query": "^4.34.1",
+    "@tanstack/react-query-devtools": "^4.33.0",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "@vanilla-extract/css": "^1.13.0",
@@ -38,9 +40,10 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "install": "^0.13.0",
     "next": "^13.4.19",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@tanstack/query-core": "^4.33.0",
+    "@tanstack/react-query": "^4.33.0"
   }
 }
