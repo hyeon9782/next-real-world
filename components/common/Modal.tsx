@@ -1,10 +1,12 @@
 import { modalBackground, modalBlock } from '@/styles/app.css';
-import React from 'react';
-
-const Modal = () => {
+import { ReactNode } from 'react';
+type Props = {
+  children: ReactNode;
+};
+const Modal = ({ children }: Props) => {
   return (
     <div className={modalBackground}>
-      <div className={modalBlock}>Modal입니다. WSL 테스트를 진행합니다. 노트북 WSL 테스트를 진행합니다.</div>
+      <div className={modalBlock}>{children}</div>
     </div>
   );
 };
