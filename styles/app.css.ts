@@ -1,5 +1,28 @@
 import { globalStyle, style } from '@vanilla-extract/css';
 
+// 반응형 레이아웃 적용
+const responsiveStyle = ({ tablet, desktop }) => ({
+  '@media': {
+    'screen and (min-width: 768px)': tablet,
+    'screen and (min-width: 1024px)': desktop,
+  },
+});
+
+export const container = style([
+  {
+    background: 'red',
+    height: '100vh',
+  },
+  responsiveStyle({
+    tablet: {
+      background: 'blue',
+    },
+    desktop: {
+      background: 'yellow',
+    },
+  }),
+]);
+
 export const modalBackground = style({
   position: 'fixed',
   top: 0,
