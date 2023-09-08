@@ -1,10 +1,10 @@
-import Modal from '@/components/common/Modal';
+import Button from '@/components/common/Button';
 import React from 'react';
 
 const Page = () => {
   return (
     <div>
-      <Modal />
+      <Button>확인</Button>
     </div>
   );
 };

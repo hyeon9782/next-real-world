@@ -20,6 +20,23 @@ export const modalBlock = style({
   boxSizing: 'border-box',
 });
 
+export const button = style({
+  background: 'white',
+  border: '2px solid green',
+  fontSize: '1rem',
+  fontWeight: '600',
+  color: 'green',
+  borderRadius: '3px',
+  padding: '5px 15px',
+  ':hover': {
+    background: 'green',
+    color: 'white',
+  },
+  ':active': {
+    background: 'blue',
+  },
+});
+
 globalStyle('body', {
   margin: 0,
 });
