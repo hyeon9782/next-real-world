@@ -1,11 +1,14 @@
+'use client';
 import Button from '@/components/common/Button';
 import { container } from '@/styles/app.css';
+
 import React from 'react';
+import { create } from './actions';
 
 const Page = () => {
   return (
     <div className={container}>
-      <Button>확인</Button>
+      <Button onClick={() => fetch('/api/auth', { method: 'POST' })}>확인</Button>
     </div>
   );
 };
