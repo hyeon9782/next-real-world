@@ -10,15 +10,14 @@ const responsiveStyle = ({ tablet, desktop }) => ({
 
 export const container = style([
   {
-    background: 'red',
     height: '100vh',
   },
   responsiveStyle({
     tablet: {
-      background: 'blue',
+      margin: 'auto 0',
     },
     desktop: {
-      background: 'yellow',
+      margin: 'auto 0',
     },
   }),
 ]);

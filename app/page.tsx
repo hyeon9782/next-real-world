@@ -2,9 +2,6 @@
 import Button from '@/components/common/Button';
 import { container } from '@/styles/app.css';
 
-import React from 'react';
-import { create } from './actions';
-
 const Page = () => {
   return (
     <div className={container}>
